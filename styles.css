@@ -106,11 +106,18 @@ h3 {
   font-size: 20px;
 }
 
-.sub-header {
+.account-header {
   display: flex;
   justify-content: space-between;
   height: 35px;
   margin: 5% 0 3%;
+}
+
+.recent-transaction-header {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  margin: 4% 4% 3%;
 }
 
 .account-btn {
@@ -157,11 +164,33 @@ h2 {
 }
 
 .recent-transactions {
-  border: 2px solid lightblue;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
   margin: 2%;
   width: 45%;
 }
 
 .transaction-categories {
   border: 2px solid lightblue;
+  display: grid;
+  grid-template-areas:
+  "date payee inflow outflow";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.date {
+  grid-area: date;
+}
+
+.middle-right {
+
+}
+
+.far-right {
+
+}
+
+.outflow {
+
 }
