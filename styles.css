@@ -55,7 +55,6 @@ h1 {
 .main-container {
   background-color: #F5F5F5;
   display: flex;
-  flex-direction: row;
   height: 100vh;
   justify-content: space-around;
 }
@@ -65,19 +64,27 @@ h1 {
   width: 45%;
 }
 
-h3 {
+.welcome-message {
   background: linear-gradient(45deg, #8ED1DC, #E3F4F6);
   border-radius: 4px;
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
+  display: flex;
+  margin-bottom: 3%;
+}
+
+h3 {
   color: #363636;
   font-size: 18px;
-  margin: 0 0 2%;
   padding: 5%;
+}
+
+.close-icon {
+  margin: -9% 0% 0% 61%;
+  width: 2%;
 }
 
 .summary-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -103,7 +110,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   height: 35px;
-  margin: 5% 0 2%;
+  margin: 5% 0 3%;
 }
 
 .account-btn {
@@ -117,14 +124,36 @@ h3 {
   width: 35%;
 }
 
+.account-icon {
+  grid-area: icon;
+  width: 20%;
+}
+
 h2 {
   color: #363636;
   font-size: 24px;
 }
 
 .account-info {
-  border: 2px solid purple;
+  background-color: #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
+  display: grid;
+  grid-template-areas:
+  "icon middle end";
+  grid-template-columns: 1fr 2fr 1fr;
   margin: 1% 0;
+  padding: 3%;
+}
+
+.account-text {
+  font-size: 18px;
+  grid-area: middle;
+}
+
+.account-text2 {
+  font-size: 18px;
+  grid-area: end;
 }
 
 .recent-transactions {
@@ -134,5 +163,5 @@ h2 {
 }
 
 .transaction-categories {
-  border: 2px solid lightgrey;
+  border: 2px solid lightblue;
 }
