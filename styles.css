@@ -36,8 +36,12 @@ body {
   margin: 5% 0
 }
 
+.nav-btn:hover {
+  border-left: 4px solid #1CA3BA;
+}
+
 .btn-icon {
-  margin: 0 25%;
+  margin: 5% 25% 0;
   width: 50%;
 }
 
@@ -172,25 +176,26 @@ h2 {
 }
 
 .transaction-categories {
-  border: 2px solid lightblue;
+  border-bottom: 2px solid #CCCCCC;
   display: grid;
   grid-template-areas:
   "date payee inflow outflow";
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 4% 4% 3%;
 }
 
-.date {
+.far-left {
   grid-area: date;
 }
 
-.middle-right {
+.middle-left {
+  grid-area: payee;
+}
 
+.middle-right {
+  grid-area: inflow;
 }
 
 .far-right {
-
-}
-
-.outflow {
-
+  grid-area: outflow;
 }
