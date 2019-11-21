@@ -135,6 +135,11 @@ h3 {
   width: 35%;
 }
 
+.account-btn:hover {
+  background-color: grey;
+  transition: .5s;
+}
+
 .account-icon {
   grid-area: icon;
   width: 20%;
