@@ -37,9 +37,8 @@ body {
   outline: none;
 }
 
-.nav-btn:hover {
+.clipboard {
   border-left: 4px solid #1CA3BA;
-  outline: none;
 }
 
 .btn-icon {
@@ -208,4 +207,8 @@ h2 {
 
 .far-right {
   grid-area: outflow;
+}
+
+.hidden {
+  /* border-left: 4px solid #1CA3BA; */
 }

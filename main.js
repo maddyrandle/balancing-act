@@ -1,10 +1,9 @@
 var closeIcon = document.querySelector(".close-icon");
-var greeting = document.querySelector(".welcome-message");
-var clipboardIcon = document.querySelector(".btn-icon");
 
-greeting.addEventListener("click", removeBanner);
-clipboardIcon.addEventListener("click", switchLightBorder);
+closeIcon.addEventListener("click", removeBanner);
 
-function removeBanner() {
-  greeting.remove();
+function removeBanner(event) {
+  if (event.target.classList.contains("close-icon")) {
+    event.target.parentElement.remove();
+  }
 }
