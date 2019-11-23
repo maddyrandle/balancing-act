@@ -34,14 +34,17 @@ body {
 
 .nav-btn {
   margin: 5% 0
+  outline: none;
 }
 
 .nav-btn:hover {
   border-left: 4px solid #1CA3BA;
+  outline: none;
 }
 
 .btn-icon {
   margin: 5% 25% 0;
+  outline: none;
   width: 50%;
 }
 
@@ -131,12 +134,14 @@ h3 {
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
   color: #FFFFFF;
   font-size: 14px;
+  outline: none;
   padding-top: 1%;
   width: 35%;
 }
 
 .account-btn:hover {
   background-color: grey;
+  outline: none;
   transition: .5s;
 }
 
