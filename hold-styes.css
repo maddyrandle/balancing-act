@@ -37,10 +37,10 @@ body {
   outline: none;
 }
 
-.nav-btn:hover {
+.border {
   border-left: 4px solid #1CA3BA;
-  outline: none;
 }
+
 
 .btn-icon {
   margin: 5% 25% 0;
@@ -59,87 +59,31 @@ h1 {
   padding: 2.5% 2.5% 0;
 }
 
-.main-container {
-  background-color: #F5F5F5;
-  display: flex;
-  height: 100vh;
-  justify-content: space-around;
-}
-
-/* wallettttttttttttttttttttt */
+/* 000000000000000000000 */
 .wallet-container {
   background-color: #F5F5F5;
   display: grid;
   grid-template-areas:
   "leftside rightside";
   grid-template-columns: 1fr 1fr;
+  height: 100vh;
 }
-
-.user-summary {
-  margin: 2%;
-  width: 45%;
-}
-
-/* wallettttttttttttttttttttt */
+/* 000000000000000000000 */
 .wallet-user-summary {
-  border-radius: 3px;
   grid-area: leftside;
-  height: 100%;
   margin: 2%;
-}
 
-/* wallettttttttttttttttttttt */
-.transactions-page-header {
-  display: grid;
-  grid-template-areas:
-  "left right1 right2 right3";
-  grid-template-columns: 3fr 1fr 1fr 1fr;
-  margin-bottom: 5%;
-}
-
-/* wallettttttttttttttttttttt */
-.transactions-page-title {
-  grid-area: left;
+  border-radius: 3px;
+  height: 100%;
 }
 
 
-/* wallettttttttttttttttttttt */
-.transaction-btns {
-  background-color: #FFFFFF;
-  border: 2px solid #1CA3BA;
-  border-radius: 50px;
-  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
-  color: #1CA3BA;
-  font-size: 11px;
-  margin-top: 22%;
-  outline: none;
-  padding: 2% 1% 1% 1%;
-  width: 98%;
-}
-
-/* wallettttttttttttttttttttt */
-.all {
-  grid-area: right1;
-}
-
-/* wallettttttttttttttttttttt */
-.inflow {
-  grid-area: right2;
-}
-
-/* wallettttttttttttttttttttt */
-.outflow {
-  grid-area: right3;
-}
-
-/* wallettttttttttttttttttttt */
 .transaction-page-container {
   background-color: #FFFFFF;
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
   height: 100vh;
 }
 
-/* wallettttttttttttttttttttt */
 .transaction-page-leftside {
   background-color: #FFFFFF;
   border-bottom: 2px solid #CCCCCC;
@@ -148,70 +92,6 @@ h1 {
   "date payee inflow outflow";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 4% 4% 3%;
-}
-
-/* wallettttttttttttttttttttt */
-.far-left {
-  grid-area: date;
-  margin-top: 20%;
-}
-
-/* wallettttttttttttttttttttt */
-.middle-left {
-  grid-area: payee;
-  margin-top: 20%;
-}
-
-/* wallettttttttttttttttttttt */
-.middle-right {
-  grid-area: inflow;
-  margin-top: 20%;
-}
-
-/* wallettttttttttttttttttttt */
-.far-right {
-  grid-area: outflow;
-  margin-top: 20%;
-}
-
-/* wallettttttttttttttttttttt */
-.wallet-recent-transactions {
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
-  grid-area: rightside;
-  margin: 14.5% 11% 0% 11%;
-}
-
-/* wallettttttttttttttttttttt */
-.new-transaction {
-  background-color: #FFFFFF;
-  font-size: 24px;
-  margin: 2%;
-  text-align: center;
-}
-
-/* wallettttttttttttttttttttt */
-.guts {
-  display: flex;
-  flex-direction: column;
-  margin: 0 15%;
-}
-
-/* wallettttttttttttttttttttt */
-.drop-down {
-  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
-}
-
-/* wallettttttttttttttttttttt */
-.expense-btn {
-  background-color: #1CA3BA;
-  border: none;
-  border-radius: 50px;
-  color: #FFFFFF;
-  font-size: 15px;
-  margin: 5% 15%;
-  padding: 1% 5%;
 }
 
 .welcome-message {
@@ -256,12 +136,13 @@ h3 {
   font-size: 20px;
 }
 
-.account-header {
+/* put back */
+/* .account-header {
   display: flex;
   justify-content: space-between;
   height: 35px;
   margin: 5% 0 3%;
-}
+} */
 
 .recent-transaction-header {
   display: flex;
@@ -270,7 +151,8 @@ h3 {
   margin: 4% 4% 3%;
 }
 
-.account-btn {
+/* put back */
+/* .account-btn {
   background-color: #1CA3BA;
   border: none;
   border-radius: 50px;
@@ -280,7 +162,52 @@ h3 {
   outline: none;
   padding-top: 1%;
   width: 35%;
+} */
+
+/* 000000000000000000000*/
+.transactions-page-header {
+  display: grid;
+  grid-template-areas:
+  "left right1 right2 right3";
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  margin-bottom: 5%;
 }
+
+.transactions-page-title {
+  grid-area: left;
+}
+
+.transaction-btns {
+  background-color: #FFFFFF;
+  border: 2px solid #1CA3BA;
+  border-radius: 50px;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
+  color: #1CA3BA;
+  font-size: 11px;
+  margin-top: 22%;
+  outline: none;
+  padding: 2% 1% 1% 1%;
+  width: 98%;
+}
+
+.transaction-btns:hover {
+  background-color: #1CA3BA;
+  color: #FFFFFF;
+}
+
+.all {
+  grid-area: right1;
+}
+
+.inflow {
+  grid-area: right2;
+}
+
+.outflow {
+  grid-area: right3;
+}
+
+/* end transactions page styling */
 
 .account-btn:hover {
   background-color: grey;
@@ -298,7 +225,8 @@ h2 {
   font-size: 24px;
 }
 
-.account-info {
+/* put back */
+/* .account-info {
   background-color: #FFFFFF;
   border-radius: 3px;
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
@@ -308,7 +236,7 @@ h2 {
   grid-template-columns: 1fr 2fr 1fr;
   margin: 1% 0;
   padding: 3%;
-}
+} */
 
 .account-text {
   font-size: 18px;
@@ -320,15 +248,7 @@ h2 {
   grid-area: end;
 }
 
-.recent-transactions {
-  background-color: #FFFFFF;
-  border-radius: 3px;
-  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
-  margin: 2%;
-  width: 45%;
-}
-
-/*  */
+/* w */
 .wallet-recent-transactions {
   background-color: #FFFFFF;
   border-radius: 3px;
@@ -337,31 +257,73 @@ h2 {
   margin: 14.5% 11% 0% 11%;
 }
 
-.transaction-categories {
+fieldset {
+  border: none;
+}
+
+.guts {
+  display: flex;
+  flex-direction: column;
+  margin: 0 15%;
+}
+
+label {
+  margin-top: 5%;
+}
+
+.drop-down {
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
+}
+
+input {
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.05);
+  border: none;
+}
+
+.expense-btn {
+  background-color: #1CA3BA;
+  border: none;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-size: 15px;
+  margin: 5% 15%;
+  padding: 1% 5%;
+}
+
+.new-transaction {
+  background-color: #FFFFFF;
+  font-size: 24px;
+  margin: 2%;
+  text-align: center;
+}
+
+
+/*put back  */
+/* .transaction-categories {
   border-bottom: 2px solid #CCCCCC;
   display: grid;
   grid-template-areas:
   "date payee inflow outflow";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 4% 4% 3%;
-}
+} */
 
 .far-left {
   grid-area: date;
+  margin-top: 20%;
 }
 
 .middle-left {
   grid-area: payee;
+  margin-top: 20%;
 }
 
 .middle-right {
   grid-area: inflow;
+  margin-top: 20%;
 }
 
 .far-right {
   grid-area: outflow;
-}
-
-.hidden {
-  display: none;
+  margin-top: 20%;
 }
