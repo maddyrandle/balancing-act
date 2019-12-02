@@ -50,26 +50,26 @@ function showWallet() {
         <h1 class="new-transaction">New Transaction</h1>
       <div class="guts">
         <label for="">Type of Transaction:</label>
-        <select class="drop-down" name="">
-          <option value=""></option>
+        <select class="drop-down">
+          <option class="drop-down-text" value="">Expense</option>
           <option value=""></option>
         </select>
         <label for="">Category:</label>
-        <select class="drop-down" name="">
-          <option value=""></option>
+        <select class="drop-down">
+          <option value="">- Select One -</option>
           <option value=""></option>
         </select>
         <label for="">Account From:</label>
-        <select class="drop-down" name="">
-          <option value=""></option>
+        <select class="drop-down">
+          <option value="">- Select One -</option>
           <option value=""></option>
         </select>
         <label for="">Payee:</label>
-        <input type="text" name="" value="">
+        <input class="input-box" type="text" name="" value="">
         <label for="">Outflow:</label>
-        <input type="text" name="" value="">
-        <label for="">Innflow:</label>
-        <input type="text" name="" value="">
+        <input class="input-box" type="text" name="" value="">
+        <label for="">Inflow:</label>
+        <input class="input-box" type="text" name="" value="">
       </div>
       <button class="expense-btn" type="button" name="button">Log Expense</button>
       </fieldset>
